@@ -1,0 +1,9 @@
+---
+title: "EDA"
+format: html
+# ¡NO pongas: draft: true ni published: false!
+---
+
+## Página EDA
+Texto de prueba.
+

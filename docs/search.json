@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "eda.html",
+    "href": "eda.html",
+    "title": "EDA",
+    "section": "",
+    "text": "Texto de prueba."
+  },
+  {
+    "objectID": "eda.html#página-eda",
+    "href": "eda.html#página-eda",
+    "title": "EDA",
+    "section": "",
+    "text": "Texto de prueba."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reporte",
+    "section": "",
+    "text": "import altair as alt from vega_datasets import data cars = data.cars() cars.head()\nimport altair as alt from vega_datasets import data cars = data.cars() alt.data_transformers.disable_max_rows()\nalt.Chart(cars).mark_point(filled=True).encode( x=“Miles_per_Gallon”, y=“Horsepower”, tooltip=[“Name”,“Origin”,“Miles_per_Gallon”,“Horsepower”] ).interactive()"
+  },
+  {
+    "objectID": "index.html#importar-dataset",
+    "href": "index.html#importar-dataset",
+    "title": "Reporte",
+    "section": "",
+    "text": "import altair as alt from vega_datasets import data cars = data.cars() cars.head()\nimport altair as alt from vega_datasets import data cars = data.cars() alt.data_transformers.disable_max_rows()\nalt.Chart(cars).mark_point(filled=True).encode( x=“Miles_per_Gallon”, y=“Horsepower”, tooltip=[“Name”,“Origin”,“Miles_per_Gallon”,“Horsepower”] ).interactive()"
+  },
+  {
+    "objectID": "index.html#markdown",
+    "href": "index.html#markdown",
+    "title": "Reporte",
+    "section": "```markdown",
+    "text": "```markdown\ntitle: “EDA” format: html —"
+  },
+  {
+    "objectID": "index.html#página-eda",
+    "href": "index.html#página-eda",
+    "title": "Reporte",
+    "section": "Página EDA",
+    "text": "Página EDA\nTexto de prueba."
+  }
+]

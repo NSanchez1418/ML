@@ -1,0 +1,31 @@
+---
+title: "Reporte"
+author: "NOE SANCHEZ"
+date: today
+format: html
+---
+
+## Importar dataset
+
+```{python}
+import altair as alt
+from vega_datasets import data
+cars = data.cars()
+cars.head()
+
+import altair as alt
+from vega_datasets import data
+cars = data.cars()
+alt.data_transformers.disable_max_rows()
+
+alt.Chart(cars).mark_point(filled=True).encode(
+  x="Miles_per_Gallon",
+  y="Horsepower",
+  tooltip=["Name","Origin","Miles_per_Gallon","Horsepower"]
+).interactive()
+
+---
+
+## Página EDA
+
+Texto de prueba.

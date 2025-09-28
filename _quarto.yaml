@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  render: [index.qmd, eda.qmd]
+
+website:
+  title: "Mi Proyecto ML"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: eda.qmd
+        text: EDA
+
+execute:
+  cache: false
+  freeze: false
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    embed-resources: false   # más liviano para GitHub Pages
