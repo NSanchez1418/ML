@@ -1,0 +1,7 @@
+.venv/
+index_files/
+.quarto/
+_site
+**/*.quarto_ipynb
+
+/.quarto/

@@ -16,16 +16,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Reporte",
+    "title": "Primer Reporte en Quatro",
     "section": "",
-    "text": "import altair as alt from vega_datasets import data cars = data.cars() cars.head()\nimport altair as alt from vega_datasets import data cars = data.cars() alt.data_transformers.disable_max_rows()\nalt.Chart(cars).mark_point(filled=True).encode( x=“Miles_per_Gallon”, y=“Horsepower”, tooltip=[“Name”,“Origin”,“Miles_per_Gallon”,“Horsepower”] ).interactive()"
+    "text": "import altair as alt\nfrom vega_datasets import data\ncars = data.cars()\ncars.head()\n\n\n\n\n\n\n\n\nName\nMiles_per_Gallon\nCylinders\nDisplacement\nHorsepower\nWeight_in_lbs\nAcceleration\nYear\nOrigin\n\n\n\n\n0\nchevrolet chevelle malibu\n18.0\n8\n307.0\n130.0\n3504\n12.0\n1970-01-01\nUSA\n\n\n1\nbuick skylark 320\n15.0\n8\n350.0\n165.0\n3693\n11.5\n1970-01-01\nUSA\n\n\n2\nplymouth satellite\n18.0\n8\n318.0\n150.0\n3436\n11.0\n1970-01-01\nUSA\n\n\n3\namc rebel sst\n16.0\n8\n304.0\n150.0\n3433\n12.0\n1970-01-01\nUSA\n\n\n4\nford torino\n17.0\n8\n302.0\n140.0\n3449\n10.5\n1970-01-01\nUSA"
   },
   {
     "objectID": "index.html#importar-dataset",
     "href": "index.html#importar-dataset",
-    "title": "Reporte",
+    "title": "Primer Reporte en Quatro",
     "section": "",
-    "text": "import altair as alt from vega_datasets import data cars = data.cars() cars.head()\nimport altair as alt from vega_datasets import data cars = data.cars() alt.data_transformers.disable_max_rows()\nalt.Chart(cars).mark_point(filled=True).encode( x=“Miles_per_Gallon”, y=“Horsepower”, tooltip=[“Name”,“Origin”,“Miles_per_Gallon”,“Horsepower”] ).interactive()"
+    "text": "import altair as alt\nfrom vega_datasets import data\ncars = data.cars()\ncars.head()\n\n\n\n\n\n\n\n\nName\nMiles_per_Gallon\nCylinders\nDisplacement\nHorsepower\nWeight_in_lbs\nAcceleration\nYear\nOrigin\n\n\n\n\n0\nchevrolet chevelle malibu\n18.0\n8\n307.0\n130.0\n3504\n12.0\n1970-01-01\nUSA\n\n\n1\nbuick skylark 320\n15.0\n8\n350.0\n165.0\n3693\n11.5\n1970-01-01\nUSA\n\n\n2\nplymouth satellite\n18.0\n8\n318.0\n150.0\n3436\n11.0\n1970-01-01\nUSA\n\n\n3\namc rebel sst\n16.0\n8\n304.0\n150.0\n3433\n12.0\n1970-01-01\nUSA\n\n\n4\nford torino\n17.0\n8\n302.0\n140.0\n3449\n10.5\n1970-01-01\nUSA"
   },
   {
     "objectID": "index.html#markdown",
@@ -37,8 +37,15 @@
   {
     "objectID": "index.html#página-eda",
     "href": "index.html#página-eda",
-    "title": "Reporte",
+    "title": "Primer Reporte en Quatro",
     "section": "Página EDA",
     "text": "Página EDA\nTexto de prueba."
+  },
+  {
+    "objectID": "index.html#visualizacion-en-altair",
+    "href": "index.html#visualizacion-en-altair",
+    "title": "Primer Reporte en Quatro",
+    "section": "Visualizacion en Altair",
+    "text": "Visualizacion en Altair\n\nVisualizacion scatterplot\n#import altair as alt #from vega_datasets import data #cars = data.cars() #alt.data_transformers.disable_max_rows()\n\nalt.Chart(cars).mark_point(filled=True).encode(\n  x=\"Miles_per_Gallon\",\n  y=\"Horsepower\",\n  tooltip=[\"Name\",\"Origin\",\"Miles_per_Gallon\",\n  \"Horsepower\"]\n).interactive()\n\n\n\n\n\n\n\n\n\nVisualizacion scatterplot con color\n\nalt.Chart(cars).mark_point(filled=True).encode(\n  x=\"Miles_per_Gallon\",\n  y=\"Horsepower\",\n  color=\"Origin\",\n  tooltip=[\"Name\",\"Origin\",\"Miles_per_Gallon\",\n  \"Horsepower\"]\n).interactive()\n\n\n\n\n\n\n\n\nalt.Chart(cars).mark_point(filled=True).encode(\n  x=\"Miles_per_Gallon\",\n  y=\"Horsepower\",\n  color=\"Origin\",\n  shape=\"Origin\",\n  tooltip=[\"Name\",\"Origin\",\"Miles_per_Gallon\",\n  \"Horsepower\"]\n).interactive()\n\n\n\n\n\n\n\n\n\nAgregaciones\n\nalt.Chart(cars).mark_bar().encode(\n  alt.X(\"Origin\", sort=\"-y\"),\n  alt.Y(\"count()\")\n)\n\n\n\n\n\n\n\n\n\nMean() de cada uno de los origenes\n\nalt.Chart(cars).mark_bar().encode(\n  alt.X(\"Origin\", sort=\"-y\"),\n  alt.Y(\"mean(Weight_in_lbs)\"),\n  tooltip=[\"Origin\", \"mean(Weight_in_lbs)\"]\n).properties(\n    width=200,\n    height=200  \n)\n\n\n\n\n\n\n\n\n\nGrafico Lineal\n\nalt.Chart(cars).mark_line(point=True).encode(\n  alt.X(\"Year\"),\n  alt.Y(\"mean(Weight_in_lbs)\"),\n  alt.Color(\"Origin\")\n).properties(\n    width=600, \n).interactive()"
   }
 ]
