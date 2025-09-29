@@ -2,9 +2,9 @@
 title: "Primer Reporte en Quatro"
 author: "NOE SANCHEZ"
 date: today
-# format: 
-#  html:
-#   embed-resources: true
+format: 
+  html:
+   embed-resources: true
 ---
 
 ## Importar dataset
